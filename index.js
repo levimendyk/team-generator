@@ -1,7 +1,9 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateHTML = request("./utils/generatehtml.js")
+const generateHTML = request("./utils/generatehtml.js");
+const newDiv = document.createElement("div");
+const 
 
 inquirer
   .prompt([
@@ -56,9 +58,9 @@ inquirer
   ])
   .then((response) => {
     // Use user feedback for... whatever!!
-    const readMeContent = generateReadMe.generateMarkdown(response);
-    fs.writeFile("README.md", readMeContent, (err) =>
-      err ? console.error(err) : console.log("Success!")
+    const htmlContent = generateHTML.generateMarkdown(response);
+    fs.writeFile("index.html", htmlContent, (err) =>
+      err ? console.error(err) : console.log("Team Genarted Successfully!")
     );
   })
   .catch((error) => {
@@ -67,3 +69,5 @@ inquirer
       console.error(error);
     }
   });
+
+  //Create a new div
