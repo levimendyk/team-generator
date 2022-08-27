@@ -2,9 +2,14 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const Employee = require("./utils/employee");
+const Manager = require("./utils/manager");
+const Engineer = require("./utils/engineer");
+const Intern = require("./utils/intern");
 
-const generateHTML = require("./utils/generatehtml.js");
-// const newDiv = document.createElement("div");
+//Generates the HTML page from the node command - Add the template.html into the ``
+function generateHTML(data) {
+  return ``;
+}
 
 // Runs through all the individual functions
 function runApp() {
@@ -37,7 +42,7 @@ function generateManager() {
       {
         type: "input",
         message: "What is the team manager's office number?",
-        name: "manager-officenumber",
+        name: "manager-officeNumber",
       },
     ])
     .then((response) => {

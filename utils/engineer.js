@@ -9,3 +9,5 @@ getRole() {
     return "Engineer";
 }
 }
+
+module.exports = Engineer;
