@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/reset.css"/>
-    <link rel="stylesheet" href="./assets/css/style.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
     <header>My Team</header>
     <main>
-        <div class="team-member">
-            <p>${manager-name}</p>
-        </div>
+      <div class="team-member">
+        <p>
+          ${manager-name}
+          <br />
+          ☕ Manager
+        </p>
+        <p>${manager-id}</p>
+        <p>${manager-email}</p>
+        <p>${manager-officenumber}</p>
+      </div>
+      <div class="team-member">
+        <p>
+          ${engineer-name}
+          <br />
+          👓 Engineer
+        </p>
+        <p>${engineer-id}</p>
+        <p>${engineer-email}</p>
+        <p>${engineer-github}</p>
+      </div>
+      <div class="team-member">
+        <p>
+          ${intern-name}
+          <br />
+          🎓 Intern
+        </p>
+        <p>${intern-id}</p>
+        <p>${intern-email}</p>
+        <p>${intern-school}</p>
+      </div>
     </main>
-</body>
+  </body>
 </html>
