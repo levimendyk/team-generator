@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+function generateHTML(data) {
+  console.log(data);
+  return `<!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
@@ -13,37 +15,40 @@
         <main>
           <div class="team-member">
             <p class="position-title">
-              m
+              ${data[0].name}
               <br>
               <br>
               ☕ Manager
             </p>
-            <p class="info">ID: m</p>
-            <p class="info">Email: m</p>
-            <p class="info">Office #: m</p>
+            <p class="info">ID: ${data[0].id}</p>
+            <p class="info">Email: ${data[0].email}</p>
+            <p class="info">Office #: ${data[0].officeNumber}</p>
           </div>
           <div class="team-member">
             <p class="position-title">
-              e
+              ${data[1].name}
               <br>
               <br>
               👓 Engineer
             </p>
-            <p class="info">ID: e</p>
-            <p class="info">Email: e</p>
-            <p class="info">GitHub: e</p>
+            <p class="info">ID: ${data[1].id}</p>
+            <p class="info">Email: ${data[1].email}</p>
+            <p class="info">GitHub: ${data[1].github}</p>
           </div>
           <div class="team-member">
             <p class="position-title">
-              undefined
+              ${data.internname}
               <br>
               <br>
               🎓 Intern
             </p>
-            <p class="info">ID: undefined</p>
-            <p class="info">Email: undefined</p>
-            <p class="info">School: undefined</p>
+            <p class="info">ID: ${data.internid}</p>
+            <p class="info">Email: ${data.internemail}</p>
+            <p class="info">School: ${data.internschool}</p>
           </div>
         </main>
       </body>
-    </html>
+    </html>`;
+}
+
+module.exports = generateHTML;
