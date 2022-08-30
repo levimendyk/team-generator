@@ -30,7 +30,7 @@ GIVEN a command-line application that accepts user input
 <li>THEN I exit the application, and the HTML is generated</li>
 </ul>
 
-[Video Tutorial](https://placeholder)
+[Video Tutorial](https://drive.google.com/file/d/1m8yW320hyo9uR6ACpvCVxD_QDH5yMs7W/view)
 
 Contribution guidelines for this project
 <img src="./assets/images/team-generator-capture.png"/>
