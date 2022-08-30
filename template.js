@@ -37,14 +37,14 @@ function generateHTML(data) {
           </div>
           <div class="team-member">
             <p class="position-title">
-              ${data.internname}
+              ${data[2].name}
               <br>
               <br>
               🎓 Intern
             </p>
-            <p class="info">ID: ${data.internid}</p>
-            <p class="info">Email: ${data.internemail}</p>
-            <p class="info">School: ${data.internschool}</p>
+            <p class="info">ID: ${data[2].id}</p>
+            <p class="info">Email: ${data[2].email}</p>
+            <p class="info">School: ${data[2].school}</p>
           </div>
         </main>
       </body>
